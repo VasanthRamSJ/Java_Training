@@ -72,12 +72,13 @@ public class Ex15b {
 			}  
 		}
 		static boolean palindrome(int n) {
-			String str= Integer.toString(n);
-			String str1= "";
-			for(int i=str.length()-1;i>=0;i--) {
-				str1=str1+str.charAt(i);
+			int pal=0,d,t=n;
+			while(t!=0) {
+				d=t%10;
+				pal=pal*10+d;
+				t=t/10;
 			}
-			if(str1.equals(str)) {
+			if(pal==n) {
 				return true;
 			}
 			else {
