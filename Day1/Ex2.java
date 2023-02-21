@@ -1,24 +1,24 @@
 package Day1;
 
 public class Ex2 {
-	static boolean val1;
-	   static double val2;
-	   static float val3;
-	   static int val4;
-	   static long val5;
-	   static char val6;
-	   static byte val7;
-	   static short val8;
+	static boolean Boolean;
+	   static double Double;
+	   static float Float;
+	   static int integer;
+	   static long Long;
+	   static char CHARACTER;
+	   static byte BYTE;
+	   static short SHORT;
 	   public static void main(String[] args) {
 	      System.out.println("Default values.....");
-	      System.out.println("Double value = " + val2);
-	      System.out.println("Float value = " + val3);
-	      System.out.println("Integer value = " + val4);
-	      System.out.println("Long value = " + val5);
-	      System.out.println("Char value = " + val6);
-	      System.out.println("Byte value = " + val7);
-	      System.out.println("Short value = " + val8);
-	      System.out.println("Boolean value = " + val1);
+	      System.out.println("Double value = " + Double);
+	      System.out.println("Float value = " + Float);
+	      System.out.println("Integer value = " + integer);
+	      System.out.println("Long value = " + Long);
+	      System.out.println("Char value = " + CHARACTER);
+	      System.out.println("Byte value = " + BYTE);
+	      System.out.println("Short value = " + SHORT);
+	      System.out.println("Boolean value = " + Boolean);
 
 	   }
 }

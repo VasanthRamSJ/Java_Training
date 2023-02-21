@@ -3,7 +3,7 @@ import java.util.*;
 public class Ex3 {
 	public static void main(String args[]) {
 		 FixedStack fixed = new FixedStack(6);
-	     DynamicStack dynamic = new DynamicStack();
+	     DynamicStack dynamic = new DynamicStack(6);
 	      int i;
 	     for (i = 1; i <= 6; i++) {
 	         fixed.push(i);
@@ -15,33 +15,18 @@ public class Ex3 {
 
 	     System.out.println();
 	     
-	   
-	     dynamic.push(9);
-	     dynamic.push(6);
-	     dynamic.push(3);
-	     dynamic.push(1);
-			System.out.println();
-	    
-			for(i=0;i<dynamic.elements.size();i++) {
-				System.out.print(dynamic.elements.get(i)+" ");
-			}
-		
-			System.out.println("Peek Top Element:"+dynamic.peek());
-			System.out.println("After peek:");
-			System.out.println();
-			for(i=0;i<dynamic.elements.size();i++) {
-				System.out.print(dynamic.elements.get(i)+" ");
-			}
-			System.out.println();
-
-			System.out.println("Pop Top Element:"+dynamic.pop());
-			for(i=0;i<dynamic.elements.size();i++) {
-				System.out.print(dynamic.elements.get(i)+" ");
-			}
+	     for ( i = 1; i <= 10; i++) {
+	            dynamic.push(i);
+	        }
+	        System.out.println("Elements in dynamic stack:");
+	        for (i = 0; i < 10; i++) {
+	            System.out.print(" "+dynamic.pop());
+	        }
+	    }
 	}
 	
 
-}
+
 interface Stack {
     void push(int data);
     int pop();
@@ -75,26 +60,33 @@ class FixedStack implements Stack {
 }
 
 class DynamicStack implements Stack {
-	
-	 ArrayList<Integer> elements = new ArrayList<>();
-	public int peek() {
-		if (elements.isEmpty()) {
-			return 0;
-		}
-		return elements.get(elements.size() - 1);
-	}
-	
-	public int pop() {
-		if (elements.isEmpty()) {
-			return 0;
-		}
-		int top = elements.get(elements.size() - 1);
-		elements.remove(elements.size() - 1);
-		return top;
-	}
-	public void push(int element) {
-		elements.add(element);
-	}
-	
+	int[] stack;
+    int top;
+
+    public DynamicStack(int size) {
+        stack = new int[size];
+        top = -1;
+    }
+
+    public void push(int value) {
+        if (top == stack.length - 1) {
+            int[] newStack = new int[stack.length * 2];
+            for (int i = 0; i <= top; i++) {
+                newStack[i] = stack[i];
+            }
+            stack = newStack;
+        }
+        stack[++top] = value;
+    }
+
+    public int pop() {
+        if (top < 0) {
+            System.out.println("Stack underflow");
+            return -1;
+        }
+        return stack[top--];
+    }
 	
 }
+	
+	

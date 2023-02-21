@@ -5,7 +5,7 @@ public class Ex11 {
 	public static void main(String args[]) {
 		
 	
-	//C1 c = new C1();
+	
 	
 	}
 }
@@ -22,16 +22,4 @@ class B11{
 		System.out.println(a+b);
 	}
 }
-/*class C1 extends A11{
-	
-	/*public C1() {
-		int c=9;
-		int d =10;
-	B11 b = new B11(c,d);
-	
-		
-	}
-	
-	
-	
-}*/
+

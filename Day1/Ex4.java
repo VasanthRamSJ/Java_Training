@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Ex4 {
 	public static void main(String args[]){    
 		  int i;
-		  int m=0;
+		  int m;
 		  int flag=0;  
 		  Scanner input = new Scanner(System.in);
 		  int n=input.nextInt();//it is the number to be checked    

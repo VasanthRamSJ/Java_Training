@@ -3,19 +3,19 @@ import java.util.*;
 public class Ex1 {
 	int x;
     public static void main(String[] args) {
-        int n = 9;
-        double d = 16.0d;
-        Ex1 e = new Ex1();
-        int []a = new int[] {0,0,0,0,0};
-        System.out.println("before function call : "+n+", "+d);
-        primitive(n, d);
-        System.out.println(" after function call : "+n+", "+d);
-        System.out.println("Array values before function call:"+Arrays.toString(a));
-        array(a);
-        System.out.println("Array values after function call:"+Arrays.toString(a));
-        System.out.println("Value of class member x before function call : "+e.x);
-        object(e);
-        System.out.println("Value of class member x after function call : "+e.x);
+        int integer = 9;
+        double doubles = 16.0d;
+        Ex1 ex = new Ex1();
+        int []array = new int[] {0,0,0,0,0};
+        System.out.println("before function call : "+integer+", ");
+        primitive(integer, doubles);
+        System.out.println(" after function call : "+integer+", "+doubles);
+        System.out.println("Array values before function call:"+Arrays.toString(array));
+        array(array);
+        System.out.println("Array values after function call:"+Arrays.toString(array));
+        System.out.println("Value of class member x before function call : "+ex.x);
+        object(ex);
+        System.out.println("Value of class member x after function call : "+ex.x);
     }
 
     public static void primitive(int n, double d) {

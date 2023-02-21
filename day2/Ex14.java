@@ -3,11 +3,11 @@ package day2;
 public class Ex14 {
 	public static void main(String args[]) {
 		
-		Student s= new Student();
-		Result r = new Result();
-		s.details(100,"vasanth");
-		int result = r.totalMarks();
-		System.out.println("the total marks of students is : "+result);
+		Student student= new Student();
+		Result result = new Result();
+		student.details(100,"vasanth");
+		int totalResult = result.totalMarks();
+		System.out.println("the total marks of students is : "+totalResult);
 	}
 
 }
@@ -18,9 +18,9 @@ public class Ex14 {
 		 this.rollNo=0;
 		 this.name=null;
 	 }
-	 void details(int r, String n) {
-		rollNo=r;
-		name =n;
+	 void details(int rollNo, String name) {
+		 this.rollNo=rollNo;
+		this.name =name;
 		System.out.println("Roll no : "+rollNo +" name : "+name);
 	 }
  }
@@ -37,12 +37,12 @@ public class Ex14 {
  }
  class Result extends Exam{
 	 int s1, s2,s3;
-	 Exam ex=new Exam();
+	 Exam exam=new Exam();
 	 int totalMarks() {
-		 ex.marks(12, 12, 12);
-		 s1=ex.sub1;
-		 s2=ex.sub2;
-		 s3=ex.sub3;
+		 exam.marks(12, 12, 12);
+		 s1=exam.sub1;
+		 s2=exam.sub2;
+		 s3=exam.sub3;
 		 return s1+s2+s3;
 	 }
  }

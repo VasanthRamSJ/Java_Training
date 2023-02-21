@@ -3,11 +3,11 @@ package day2;
 public class Ex8 {
 	 public static void main(String args[])
 	    {
-	        Singleton x = Singleton.getInstance();
-	        Singleton y = Singleton.getInstance();  
-	        System.out.println("Hashcode of x is " + x.hashCode());
-	        System.out.println("Hashcode of y is " + y.hashCode());
-	        if (x == y) {
+	        Singleton singleton = Singleton.getInstance();
+	        Singleton singleton2 = Singleton.getInstance();  
+	        System.out.println("Hashcode of x is " + singleton.hashCode());
+	        System.out.println("Hashcode of y is " + singleton2.hashCode());
+	        if (singleton == singleton2) {
 	            System.out.println(
 	                "two object references point to the same memory location on the heap i.e, to the same object");
 	        }
