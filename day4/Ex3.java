@@ -7,17 +7,14 @@ public class Ex3 {
 	}
 }
 
-
 class Sample1{
 	public void mht1() {
 		mht2();
 		System.out.println("caller");
 	}
-	
-	public void mht2() {
-		
+	public void mht2() {	
 		try {
-			int a=1/0;
+			int a = 1 / 0;
 			System.exit(0);
 		}
 		catch(Exception e) {

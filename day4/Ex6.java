@@ -1,27 +1,29 @@
 package day4;
 
 public class Ex6 {
-	public static void main(String args[]) {
+	public static void main(String args[]) throws Exception {
 		DerivedClass derived = new DerivedClass();
-		
+
 	}
 }
-class BaseClass{
-	BaseClass(){
-		
-	int a=1/0;
-	System.out.println(a);
-	}
-	
-}
-class DerivedClass extends BaseClass {
-	public DerivedClass() {
+
+class BaseClass {
+	BaseClass() throws Exception {
 		try {
-			BaseClass base = new BaseClass();
+			int a = 1 / 0;
+			System.out.println(a);
+		} catch (Exception e) {
+			System.out.println(e);
+
 		}
-		catch(Exception e) {
-			System.out.println(e+"exceptions");
-		}
-		
+		System.out.println("code after exception");
+	}
+
+}
+
+class DerivedClass extends BaseClass {
+
+	public DerivedClass() throws Exception {
+		super();
 	}
 }
