@@ -1,0 +1,12 @@
+package Ex7;
+
+import java.io.*;
+
+public class Qn_10c {
+    public static void main(String[] args) {
+
+        File file = new File("/Users/vasanthram/Documents/Ex7/fileSize.txt");
+        System.out.println(file.length());
+
+    }
+}
