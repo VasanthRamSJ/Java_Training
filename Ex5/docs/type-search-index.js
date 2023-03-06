@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"Ex5.FlyWeight","l":"Book"},{"p":"Ex5.FlyWeight","l":"BookFactory"},{"p":"Ex5.FlyWeight","l":"BookType"},{"p":"Ex5.FlyWeight","l":"FlyWeightPattern"}];updateSearchResults();

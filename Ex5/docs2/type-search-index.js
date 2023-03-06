@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"Ex5.Bridge","l":"Animal"},{"p":"Ex5.Bridge","l":"BridgePattern"},{"p":"Ex5.Bridge","l":"ColdBlooded"},{"p":"Ex5.Bridge","l":"Reptiles"},{"p":"Ex5.Bridge","l":"SocialAnimal"},{"p":"Ex5.Bridge","l":"WarmBlooded"}];updateSearchResults();
