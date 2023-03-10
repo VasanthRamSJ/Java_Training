@@ -4,7 +4,12 @@ import java.time.MonthDay;
 import java.time.temporal.ChronoField;
 
 public class HolidayChecker {
-	   // Determines whether a given date is a holiday
+	   
+       /** 
+        * @param date
+        * @return boolean
+        */
+       // Determines whether a given date is a holiday
     static boolean isHoliday(LocalDate date){
         MonthDay monthDay=MonthDay.of(date.getMonthValue(), date.getDayOfMonth());
         if(monthDay.equals(MonthDay.of(1, 1))||monthDay.equals(MonthDay.of(8, 15))||monthDay.equals(MonthDay.of(1, 26))){
