@@ -1,12 +1,12 @@
 
-package Ex7;
-
 import java.io.*;
-
+import java.util.*;
 public class Qn_9 {
     public static void main(String[] args) {
-
-        String inputSentence = "My name is Vasanth";
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter the sentence : ");
+        String inputSentence = input.nextLine();
         int cnt = 0;
         try (BufferedReader reader = new BufferedReader(new StringReader(inputSentence))) {
             String sentence;
@@ -17,6 +17,9 @@ public class Qn_9 {
 
         } catch (Exception e) {
             System.out.println(e);
+        }
+        finally{
+            input.close();
         }
         System.out.println(cnt);
     }

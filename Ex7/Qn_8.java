@@ -1,4 +1,4 @@
-package Ex7;
+
 
 import java.util.*;
 
@@ -8,9 +8,14 @@ public class Qn_8{
             int cnt=0;
             while(scanner.hasNext()){
                 String line = scanner.nextLine();
+                if(line.equals(".")){
+                  break;
+                }
                 cnt=cnt+line.length();
-                System.out.println(cnt);
+               
             }
+            System.out.println(cnt);
+            
           
         }
     }

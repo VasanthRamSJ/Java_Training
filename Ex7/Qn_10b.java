@@ -1,4 +1,3 @@
-package Ex7;
 
 import java.io.File;
 
