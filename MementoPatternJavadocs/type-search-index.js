@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"Ex5.Memento","l":"InitialScoreBoard"},{"p":"Ex5.Memento","l":"Memento"},{"p":"Ex5.Memento","l":"MementoPattern"},{"p":"Ex5.Memento","l":"WicketFall"}];updateSearchResults();
